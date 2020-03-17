@@ -55,16 +55,7 @@ public class PrintArray
      */
     public void printRow_LastToFirst(int[][] list)
     {
-        for(int row=list.length-1; row>=0; row--)
-        {
-            for(int col=list[row].length-1; col >= 0; col--)
-            {
-                System.out.print(String.format("[%2d]",list[row][col]));
-            }
-            System.out.println();
-        }
-
-        System.out.println();
+        
     }
 
     /**
@@ -74,18 +65,7 @@ public class PrintArray
      */
     public void printCol_FirstToLast(int[][] list)
     {
-        if(list.length > 0) // must be at least one row for this to work
-        {
-            for(int col=0; col < list[0].length; col++)
-            {
-                for(int row=0; row < list.length; row++)
-                {
-                    System.out.print(String.format("[%2d]",list[row][col]));
-                }
-                System.out.println();
-            }
-            System.out.println();
-        }
+        
     }
 
     /**
@@ -95,18 +75,7 @@ public class PrintArray
      */
     public void printCol_LastToFirst(int[][] list)
     {
-        if(list.length > 0) // must be at least one row for this to work
-        {
-            for(int col=list[0].length-1; col >= 0; col--)
-            {
-                for(int row=list.length-1; row >= 0; row--)
-                {
-                    System.out.print(String.format("[%2d]",list[row][col]));
-                }
-                System.out.println();
-            }
-            System.out.println();
-        }
+        
     }
 
 }
